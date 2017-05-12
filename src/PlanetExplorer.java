@@ -4,6 +4,13 @@
 // Student ID:
 
 public class PlanetExplorer {
+	
+	private int x;
+	private int y;
+	private String obstracles;
+	private String komanda;
+	int i,j;
+	
 	public PlanetExplorer(int x, int y, String obstacles){
 	/*	x and y represent the size of the grid.
 	 *  Obstacles is a String formatted as follows: "(obs1_x,obs1_y)(obs2_x,obs2_y)...(obsN_x,obsN_y)" with no white spaces. 
@@ -12,6 +19,10 @@ public class PlanetExplorer {
 		PlanetExplorer explorer = new PlanetExplorer(100,100,"(5,5)(7,8)")  
 		 
 	 */
+		this.x= x;
+		this.y= y;
+		this.obstracles= obstracles;
+		
 	}
 	
 	public String executeCommand(String command){
@@ -25,7 +36,37 @@ public class PlanetExplorer {
 		 * Where pos_x and pos_y are the final coordinates, facing is the current direction the explorer is pointing to (N,S,W,E).
 		 * The return string should also contain a list of coordinates of the encountered obstacles. No white spaces.
 		 */
+	
 		
+		switch(komanda) 
+		{
+		
+		case "l":
+			if(komanda == "l") {
+			} break;
+		case "r":
+			if(komanda == "r") {
+				for(i = 0; i<0;)
+				{
+					for(j=0; j<1;){
+						j++;
+					}
+				}
+			} break;
+		case "f":
+			if(komanda == "f") {
+				for(i = 0; i<2;)
+				{
+					for(j=0; j<2;){
+						j++;
+						i++;
+					}
+				}
+			} break;
+		case "b":
+			} break;
+		
+		}
 		return null;
 	}
 }
